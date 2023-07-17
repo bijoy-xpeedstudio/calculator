@@ -1,0 +1,30 @@
+{
+    "name": "bijoy/math",
+    "description": "This is a demo mathematical project",
+    "version": "1.0.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bijoy\\Math\\": "math/src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bijoy Karmokar"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bijoy\\Math\\MathServiceProvider"
+            ],
+            "aliases": {
+                "Math": "Bijoy\\Math\\"
+            }
+        }
+    }
+}
